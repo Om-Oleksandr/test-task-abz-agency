@@ -1,0 +1,30 @@
+@font-face {
+  font-family: Nunito;
+  src: url(../public/assets/fonts/Nunito-Regular.ttf);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: Nunito;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h2 {
+  text-align: center;
+  margin: 0 auto 50px;
+  font-size: 40px;
+  line-height: 40px;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+}
