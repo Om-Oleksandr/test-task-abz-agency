@@ -1,11 +1,12 @@
 import React from 'react'
 import styles from './header.module.sass'
+import CONSTANTS from '../../constants'
 const Header = props => {
   const { scrollToSection } = props
   return (
     <header className={styles.header}>
       <div>
-        <img src='/assets/images/Logo.svg' alt='logo' />
+        <img src={`${CONSTANTS.PUBLIC_URL}/Logo.svg`} alt='logo' />
       </div>
       <div className={styles.buttonGroup}>
         <button

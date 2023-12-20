@@ -10,6 +10,7 @@ import postScheme from '../../schemes'
 import { getPositions, getToken, getUsers, postUser } from '../../api'
 import { getUsersList, getPositionsList, updateList, getAccessToken } from '../../store/slices/usersSlice'
 import { useDispatch, useSelector } from 'react-redux'
+import CONSTANTS from '../../constants'
 const initialValues = {
   name: '',
   email: '',
@@ -76,7 +77,7 @@ const PostForm = () => {
       <h2>Working with POST request</h2>
       {isSent ? (
         <div>
-          <img src='/assets/images/success-image.svg' alt='success' />
+          <img src={`${CONSTANTS.PUBLIC_URL}/success-image.svg`} alt='success' />
         </div>
       ) : (
         <Formik

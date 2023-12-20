@@ -11,7 +11,6 @@ const usersSlice = createSlice({
   },
   reducers: {
     getUsersList (state, { payload }) {
-      console.log(payload)
       state.users = [...state.users, ...payload.users]
       state.totalPages = payload.total_pages
     },
@@ -25,11 +24,9 @@ const usersSlice = createSlice({
       }
     },
     getPositionsList (state, { payload }) {
-      console.log(payload);
       state.positions = payload.positions
     },
     getAccessToken (state, { payload }) {
-      console.log(payload);
       state.token = payload.token
     }
   }
