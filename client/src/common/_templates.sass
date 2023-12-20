@@ -1,0 +1,20 @@
+%container
+    max-width: 1200px
+    padding: 0 15px
+%button
+    background-color: rgb(244, 224, 65)
+    width: 100px
+    font-family: Nunito
+    font-size: 16px
+    line-height: 26px
+    padding: 4px 0
+    cursor: pointer
+    border:
+        style: none
+        radius: 80px
+@mixin border($color: #000, $style: solid, $width: 1px, $radius: 0 0 0 0)
+    border:
+        color: $color
+        style: $style
+        width: $width
+        radius: $radius

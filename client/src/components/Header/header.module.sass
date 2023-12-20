@@ -1,0 +1,19 @@
+@use 'src/common/templates'
+.header
+    @extend %container
+    height: 60px
+    display: flex
+    justify-content: space-between
+    align-items: center
+    margin: auto
+    @media (max-width:1024px)
+        padding: 0 60px
+    @media (max-width:768px)
+        padding: 0 32px
+    @media (max-width:390px)
+        padding: 0 16px
+    .buttonGroup
+        display: flex
+        column-gap: 10px
+        .item
+            @extend %button

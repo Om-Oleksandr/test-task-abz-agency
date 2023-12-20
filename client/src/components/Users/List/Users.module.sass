@@ -1,0 +1,31 @@
+@use 'src/common/templates'
+.container
+    @extend %container
+    margin: 140px auto 0
+    display: grid
+    .list
+        display: grid
+        grid-template-columns: repeat(3, minmax(100px, 370px))
+        column-gap: 29px
+        height: 100%
+    button
+        @extend %button
+        width: 120px
+        justify-self: center
+        margin-top: 50px
+    @media (max-width:1024px)
+        padding: 0 60px
+        .list
+            grid-template-columns: repeat(3, minmax(100px, 282px))
+            row-gap: 29px
+    @media (max-width:768px)
+        padding: 0 32px
+        .list
+            grid-template-columns: repeat(2, minmax(200px, 344px))
+            grid-auto-flow: row dense
+            row-gap: 16px
+            column-gap: 16px
+    @media (max-width:500px)
+        .list
+            grid-template-columns: repeat(1, minmax(200px, 328px))
+            justify-content: center
