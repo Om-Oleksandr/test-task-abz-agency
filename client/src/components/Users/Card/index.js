@@ -10,8 +10,9 @@ const UserCard = props => {
       <img
         src={photo}
         alt='user_avatar'
+        loading='lazy'
         onError={e => {
-          e.target.src = `${CONSTANTS.PUBLIC_URL}/Logo.svg`
+          e.target.src = `${CONSTANTS.PUBLIC_URL}/photo-cover.svg`
         }}
       />
       <p className={styles.name}>{name}</p>

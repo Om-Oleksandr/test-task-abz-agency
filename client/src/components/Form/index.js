@@ -21,15 +21,13 @@ const initialValues = {
 const PostForm = () => {
   const dispatch = useDispatch()
   const { currentPage, positions, token } = useSelector(state => state.users)
-  // const [positions, setPositions] = useState()
   const [isSent, setIsSent] = useState(false)
   const handleSubmit = (values, formikBag) => {
     const formData = new FormData()
     const [position] = positions.filter(
       position => position.name === values.position && position.id
     )
-    const cleanNumber = values.phone.replace(/\D/g, '')
-    const validNumber = '+' + cleanNumber
+    const validNumber = '+' + values.phone.replace(/\D/g, '')
     formData.append('position_id', position.id)
     formData.append('name', values.name)
     formData.append('email', values.email)

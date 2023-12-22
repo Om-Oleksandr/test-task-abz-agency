@@ -5,7 +5,7 @@ const Welcome = props => {
   const { scrollToSection } = props
   return (
     <div className={styles.welcomeContainer}>
-      <img src={`${CONSTANTS.PUBLIC_URL}/background.jpeg`} alt='field' />
+      <img src={`${CONSTANTS.PUBLIC_URL}/background.webp`} alt='field' />
       <div className={styles.content}>
         <h1>Test assignment for front-end developer</h1>
         <p>
